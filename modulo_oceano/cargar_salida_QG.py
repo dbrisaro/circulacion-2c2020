@@ -34,6 +34,7 @@ dx: Distancia entre puntos del eje X
 dy: Distancia entre puntos del eje y
 
 """
+
 def cargar(dir_salida,Lx,Ly,nx,ny):
 
     #Cargamos las librerias necesarias
@@ -59,7 +60,7 @@ def cargar(dir_salida,Lx,Ly,nx,ny):
         if name[0:3] == 'psi':
             k1 = name[3]+name[4]
             psi_temp[:,:,int(k1)-1] = np.loadtxt(dir_salida+name) #fromfile(name)
-        if name[0:3] = ='vor':
+        if name[0:3] =='vor':
             k2 = name[3]+name[4]
             vort_temp[:,:,int(k2)-1] = np.loadtxt(dir_salida+name) #fromfile(name)
         if name[0:7] == 'QG_diag':

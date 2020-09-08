@@ -34,6 +34,7 @@ dx: Distancia entre puntos del eje X
 dy: Distancia entre puntos del eje y
 
 """
+
 def cargar(dir_salida,Lx,Ly,nx,ny):
 
     #Cargamos las librerias necesarias
